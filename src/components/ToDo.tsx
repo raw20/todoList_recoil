@@ -14,7 +14,6 @@ const ToDo = ({ text, category, id }: IToDo) => {
     //값을 즉시 변경하거나 현재값을 인자로 주는 함수
     setToDos((oldToDos) => {
       const targetIndex = oldToDos.findIndex((toDo) => toDo.id === id);
-      console.log(targetIndex);
       const newToDo = { text, id, category: name as any };
       return [
         ...oldToDos.slice(0, targetIndex),
